@@ -1,0 +1,58 @@
+1. Use the cat command to create a file containing the following data. Call it myfile use
+tabs to separate the fields.
+1001 RAM 97
+1025 ARUN 86
+1013 RAJU 93
+
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cat >myfile.txt
+1001 RAM 97
+1025 ARUN 86
+1013 RAJU 93
+^C
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cat myfile.txt
+1001 RAM 97
+1025 ARUN 86
+1013 RAJU 93
+
+2. Use the cut and paste commands to swap fields 2 and 3 of myfile.
+
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cut -f1,3 -d " " myfile.txt >myfile1.txt
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cat myfile1.txt
+1001 97
+1025 86
+1013 93
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cut -f2 -d " " myfile.txt >myfile2.txt
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cat myfile2.txt
+RAM
+ARUN
+RAJU
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ paste myfile1.txt myfile2.txt >myfile.txt
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cat myfile.txt
+1001 97 RAM
+1025 86 ARUN
+1013 93 RAJU
+
+3. Print first 2 rows of the file myfile
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ head -2 myfile.txt
+1001 97 RAM
+1025 86 ARUN
+
+4. Print the contents of 3rd row only of the file myfile
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ head -3 myfile.txt|tail -1
+1013 93 RAJU
+
+5. Print the names only from the file myfile
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cut -f2 myfile.txt
+RAM
+ARUN
+RAJU
+
+6. Count the number of Lines, words and characters from the previous output
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cut -f2 myfile.txt | wc -l
+3
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cut -f2 myfile.txt | wc -w
+3
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$ cut -f2 myfile.txt | wc -c
+14
+najiya@najiya-VirtualBox:~/Documents/shell/exercise$cut-f2myfile.txt | wc
+3 3 14
