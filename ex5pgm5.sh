@@ -1,3 +1,5 @@
+#Write a shell script for Calculator
+
 #! /bin/bash
 ch=0
 until [ $ch -eq 6 ]
