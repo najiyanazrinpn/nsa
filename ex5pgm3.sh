@@ -1,3 +1,5 @@
+#Write a shell script that accepts two integers as its arguments and computes the value of first number raised to the power of the second number.
+
 #! /bin/bash
 read -p "Enter integer1 : " n1
 read -p "Enter integer2 : " n2
