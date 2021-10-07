@@ -1,3 +1,5 @@
+#Write a shell script which receives two file names as arguments. It should check whether the two file contents are same or not. If they are same then second file should be deleted.
+
 #! /bin/bash
 a=$(cat $1)
 b=$(cat $2)
