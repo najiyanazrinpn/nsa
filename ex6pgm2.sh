@@ -1,3 +1,8 @@
+#2) Write shell script to show various system configurations like
+#   • your OS and version, release number, kernel version
+#   •all available shells
+#   • File system (Mounted)
+
 #! /bin/bash
 echo "-----Operating System-----"
 uname -o
