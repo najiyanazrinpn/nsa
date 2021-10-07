@@ -1,3 +1,10 @@
+#1) Write shell script to show various system configuration like
+#   -Currently logged user and his log in name
+#   -Your current shell
+#   -Your home directory
+#   -Your operating system type
+#   -Your current working directory
+
 #! /bin/bash
 echo "----Currently logged user----"
 who
