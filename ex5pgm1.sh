@@ -1,3 +1,4 @@
+#Write a shell script that takes a command line argument and reports on whether it is directory, a file, or something else.
 #! /bin/bash
 a=$1
 if [ -e $a ]
